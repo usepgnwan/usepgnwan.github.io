@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="assets/img/schorcut.png">
+	<title>Web Cv</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="style/css/bootstrap.min.css">
+</head>
+<body class="container">
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Open+Sans:wght@600&display=swap');
+	body{
+		font-family: 'Open Sans'; 
+		color: black;
+	}
+	.navbar{
+		width: 85%;
+		margin: 0 auto;
+	}
+	.btn-tamplate:hover{
+		background-color: #f28e15;
+		border: 1px solid #f28e15;
+	}
+	/*bag navbar*/
+	.jumbotron{
+		background: white;
+		margin-top: 90px;
+	}
+	.jumbotron .row{
+		margin-top: 65px;
+	}
+	.jumbotron .banner-image img{
+			width: 50%;
+		}
+	.jumbotron .jumbotron h1{
+		font-size: 2em;
+	}
+	.label{
+		font-family: 'Roboto';
+		color: #3995F9;
+		margin-bottom: 15px;
+	}
+	/*btn*/
+	.btn-orange{
+		margin-top: 20px;
+		color: white;
+		background-color:#f28e15 ;
+	}
+	.btn-orange:hover{
+		color: white;
+		background-color: #ffd700;
+	}
+	.column{
+		margin-bottom: 25px;
+	}
+	footer{
+		margin-top: 20px;
+		border-top: 2px solid #f6f6f6;
+	}
+	footer .row{
+
+		margin-top: 20px; 
+	}
+	footer li{
+		margin-left: -36px;
+		text-decoration: none; 
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	footer .logo-footer{
+		margin-bottom: 10px;
+	}
+	.img-content-android{
+		display: none;
+	}
+
+	@media screen and (max-width: 990px) {
+		 .navbar-collapse {
+	    	background-color: #f6f6f6;
+		}
+		 .inline-form{
+	    	width: 90%;
+	    	margin: 20px auto;
+		}
+		.navbar{
+			width: 100%;
+			margin: 0 auto;
+			border-bottom: 2px solid #f6f6f6;
+		}
+
+		.jumbotron{
+			height: 450px;
+		}
+		.label{
+			font-size: 0.9em;
+		}
+		.column{
+			margin-bottom: 25px;
+			text-align: center;
+		}
+		.img-content{
+			display: none;
+		}
+
+		.img-content-android{
+			display: inline-block;
+			width: 30%;
+			margin-bottom: 20px;
+		}
+
+	}
+
+	@media screen and (max-width: 600px) {
+
+		.jumbotron .banner-image img{
+			width: 80%;
+		}
+		.jumbotron h1{
+			font-size: 1.9em;
+		}
+		footer{
+			margin-left: 15px;
+		}
+		.column h3{
+			padding-top: 30px;
+			font-size: 1.3em;
+		}
+		main{
+			margin-bottom: 80px;
+		}
+
+	}
+</style>
+	<header>
+			<!-- Navbar -->
+			<section>
+			<!-- 	<nav class="navbars fixed-top container navbar-collapse">
+				    <div class="float-left">
+				     <a href="" class="navbar-brand">
+					    <img src="assets/img/logo.png" width="100px" height="30px" alt="">
+					  </a>
+					  </div>
+					  <div class="float-right">
+					  	<a href="" class="btn btn-primary shadow ">Bikin CV Sekarang</a>				   	
+					  	<a href="" class="btn btn-outline-primary ">Tamplate CV</a>
+					  </div>
+	
+				  
+				</nav> -->
+					<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top ">
+
+				  	 <a href="#" class="navbar-brand">
+					    <img src="assets/img/logo.png" width="100px" height="30px" alt="">
+					  </a>
+
+					<!--   <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					  </button> -->
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					  </button>
+					  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+					   
+					        <form class=" inline-form navbar-nav ml-auto">
+						  	<a href="" class="btn btn-primary shadow " style="margin-bottom: 4px; margin-top: 4px; margin-left: 5px;">Bikin CV Sekarang</a>	
+						  	<a href="" class="btn btn-outline-primary btn-tamplate" style="margin-bottom: 4px; margin-top: 4px; margin-left: 5px;">Tamplate CV</a>
+						  </form>
+					  </div>
+				</nav>
+			</section>
+			<!-- Penutup navbraa -->
+			<!-- jumbotronn -->
+			<section>
+				<div class="jumbotron jumbotron-fluid text-center">
+				  <div class="container ">
+				    <h1 class="font-weight-bold mb-3">Bikin CV Gratis Cepat dan Praktis</h1>
+				    <p class="label mb-2">Bikin CV sekarang jadi lebih mudah dimana saja dan kapan saja </p>
+				   
+				  </div>
+				  <div class="row banner-image">
+					  <div class="col-md-12 float-center">
+					  	<img class="" src="assets/img/banner.png"  >
+					  </div>
+					    	
+				   </div>
+				</div>
+			</section>
+			<!-- penutup jumbotron -->
+	</header>
+	<main>
+		<section>			
+				<div class="row container-fluid mb-5">
+					<div class="col-md-12 col-lg-7 column" style="">
+						
+							<h5 class="label mb-3"><b>Tempat Bertanya</b> </h5>
+							<img src="assets/img/banner-tanya.png" width="40%" height="40%" class= "img-content-android">
+							  <h3 class="font-weight-bold mb-3" >Tanyakan Kesulitanmu & temukan jawabannya.</h3>
+				   			 <p class="label mb-2">Kamu bisa bertanya langsung kepada admin melalui WhatsApp. Hal ini akan membantu kamu apabila kesulitan saat membuat cv</p>
+				   			 <a  href="" class="btn btn-orange  ">Tanya Sekarang</a>	
+						
+					</div>
+					<div class="col-md-12 col-lg-5 column "  style=" padding-left: 40px;">
+						<div class="row ">
+							
+							<img src="assets/img/banner-tanya.png" width="50%" height="50%" class=" img-content">
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<section>			
+				<div class="row container-fluid mb-2">
+					<div class="col-md-12 col-lg-5 column"  style="padding-left: 40px;">
+						<div class="row ">
+							
+						<img src="assets/img/banner-bikin.png" width="65%" height="65%" class= "img-content">
+						</div>
+					</div>
+					<div class="col-md-12 col-lg-7 column" style=" ">
+						
+							<h5 class="label mb-3"><b>Mau Bikin CV ?</b></h5>
+							<img src="assets/img/banner-bikin.png" width="40%" height="40%" class= "img-content-android">
+							<h3 class="font-weight-bold mb-3">Mending Nyoba Dulu Dari Pada Penasaran</h3>
+				   			<p class="label mb-2">Stop berfikir takut susah bikinnya, cba aja dulu nanti juga bisa!</p>
+				   			<a  href="" class="btn btn-orange  ">Bikin Sekarang</a>	
+						
+					</div>
+				</div>
+		</section>
+	</main>
+	<footer>
+		<div class="row">
+			<div class="col-md-4" >
+				<img src="assets/img/logo.png" width="80px;" class="logo-footer">
+				<p class="label  "> Tempat untuk membuat cv gratis dan praktis </p>
+			</div>
+			<div class="col-md-2 offset-md-3">
+				
+				<p class="label"> <b>Informasi</b> </p>
+				<ul>
+					<li>cv</li>
+					<li>cv</li>
+				</ul>
+			</div>
+			<div class="col-md-3 " >
+				<p class="label "><b>Social Media</b></p>
+				<ul>
+					<li><a href=""><img src="assets/img/wa.png" height="20px"></a></li>
+					<li><a href=""><img src="assets/img/email.png" height="20px"></a></li>
+				</ul>
+					
+				
+				
+			</div>
+		</div>
+	</footer>
+<script type="text/javascript" src="style/js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="style/js/bootstrap.min.js"></script>
+</body>
+</html>
