@@ -1233,3 +1233,24 @@ section {
   --bs-popover-header-bg: #32D3EF;
   --bs-popover-header-color: #ffffff;
 }
+
+
+.tags-tech{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.tags-tech > li {
+  display: inline-block;
+}
+.tags-tech a {
+  display: inline-block;
+font-size: 12px;
+line-height: 1.5em;
+color: #666;
+padding: 2px 7px;
+background-color: #fff;
+border-radius: 3px;
+border: 2px solid #e5e5e5;
+margin: 3px 2px 2px;
+}
