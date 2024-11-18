@@ -192,9 +192,9 @@
   /**
    * Initiate portfolio lightbox 
    */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
+  // const portfolioLightbox = GLightbox({
+  //   selector: '.portfolio-lightbox'
+  // });
 
   /**
    * Portfolio details slider
@@ -245,18 +245,42 @@
   /**
    * Animation on scroll
    */
-  window.addEventListener('load', () => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
-    })
+  // window.addEventListener('load', () => {
+  //   AOS.init({
+  //     duration: 1000,
+  //     easing: 'ease-in-out',
+  //     once: true,
+  //     mirror: false
+  //   })
+  // });
+
+  // /**
+  //  * Initiate Pure Counter 
+  //  */
+  // new PureCounter();
+
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      mutation.addedNodes.forEach((node) => {
+        if (node.nodeType === 1 && $(node).find('.portfolio-details-slider').length) {
+          new Swiper('.portfolio-details-slider', {
+            speed: 400,
+            loop: true,
+            autoplay: {
+              delay: 5000,
+              disableOnInteraction: false
+            },
+            pagination: {
+              el: '.swiper-pagination',
+              type: 'bullets',
+              clickable: true
+            }
+          });
+        }
+      });
+    });
   });
-
-  /**
-   * Initiate Pure Counter 
-   */
-  new PureCounter();
-
+  
+  observer.observe(document.body, { childList: true, subtree: true });
+  
 })()
