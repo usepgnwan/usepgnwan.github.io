@@ -605,6 +605,15 @@ section {
   justify-content: center;
 }
 
+.portfolio .portfolio-wrap .portfolio-tags {
+  opacity: 1; 
+  right: 0;
+  top: 3px;
+  z-index: 3;
+  position: absolute; 
+  display: flex;
+  justify-content: center;
+}
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #fff;
   font-size: 28px;
