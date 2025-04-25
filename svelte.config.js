@@ -6,10 +6,10 @@ const config = {
   preprocess: vitePreprocess(),
   kit: {
 		adapter: adapter({
-		fallback: 'index.html',
-		pages: 'build',
-		assets: 'build',
-		precompress: false
+			fallback: 'index.html',
+			pages: 'build',
+			assets: 'build',
+			precompress: false
 		}),
 		paths: {
 		base: '' // HARUS kosong untuk username.github.io
