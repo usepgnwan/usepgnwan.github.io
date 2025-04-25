@@ -30,7 +30,8 @@ jobs:
           BASE_PATH: ''  # ✅ Kosong untuk root domain
         run: |
           npm run build
-          touch build/.nojekyll  # Nonaktifkan Jekyll
+          mv build/app/* build/ 2>/dev/null || true
+          touch build/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
