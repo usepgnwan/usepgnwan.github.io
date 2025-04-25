@@ -3,7 +3,6 @@ name: Deploy Portofolio
 on:
   push:
     branches: 'main'
-sdsdsdsds
 jobs:
   build_site:
     runs-on: ubuntu-latest
